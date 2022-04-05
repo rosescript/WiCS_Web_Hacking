@@ -4,53 +4,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{url_for('static', filename='wacko_style.css')}}">
-    <title>{% block title %}{% endblock %}</title>
+    <title>Success!</title>
 </head>
-<body style="font-family:garamond; background-color: rgb(130, 7, 37);color:black;">
+<body style="font-family:garamond; background-color: rgb(26, 146, 150);color:rgb(100, 89, 89);">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-            <ul class="navbar-nav mr-auto">
+            <!-- <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="/about">About</a>
                 </li>
-            </ul>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/now_playing">Now Playing</a>
+                </li>
+            </ul> -->
         </div>
         <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="/">Persephone's Theater</a>
+            <a class="navbar-brand mx-auto" href="#">WiCS Cafe</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
+            <!-- <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/login">Employee Sign In</a> <!--make this a button in the future-->
+                    <a class="nav-link" href="/login">Admin Sign In</a> make this a button in the future
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"></a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
     
-    {% block content %}
-    {% endblock %}
+
     <center>
-    <div class="footer-basic">
-        <footer>
-            <!-- <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div> -->
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="/">Home</a></li>
-                <li class="list-inline-item"><a href="/about">About</a></li>
-                <li class="list-inline-item"><a href="/now_playing">Now Playing</a></li>
-                <li class="list-inline-item"><a href="#">Contact Us</a></li>
-            </ul>
-        </footer>
-    </div>
+        <div>
+            <h1>Success! Complete one of the two promts below. Make sure to save the picture or video.</h1>
+            <div>
+                <h2>Option 1: Recreate the image below and take a picture.</h2>
+            <img src="{{url_for('static', filename='/images/group_recre.png')}}" style="width:100%;">
+            </div>
+            <div>
+                <h2>Option 2: Record two members of your team playing rock, paper, scissors. The loser must do 15 jumping jacks. (make sure to save the video so we have proof that you completed the task!)</h2>
+            </div>
+            
+        </div>
     </center>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -58,3 +59,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+
+

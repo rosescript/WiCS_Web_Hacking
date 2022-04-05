@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+
+<center>
+    <h1 style="color:black;"><b>Now Playing at Persephone's Theater</b></h1>
+</center>
+
+<center>
+    <div id="team_pics" style="color:black;">
+        <div class="row" style="content: ''; clear: both; display: table;">
+            <div class="column" title="The Batman." style="float: left; width: 33.33%; padding: 5px;">
+            <a href="https://www.imdb.com/title/tt1877830/">
+                <img src="{{url_for('static', filename='/images/TheBatman.jpg')}}" height="526" width="300" alt="The Batman movie poster." style="width:100%">
+            </a>
+            <center><h4><b>The Batman</b></h4></center>
+            </div>
+            <div class="column" title="Jujutsu Kaisen 0" style="float: left; width: 33.33%; padding: 5px;">
+                <a href="https://www.imdb.com/title/tt14331144/?ref_=nv_sr_srsg_0">
+                    <img src="{{url_for('static', filename='/images/JJK0.jpg')}}" height="526" width="300" alt="Jujutsu Kaisen 0 movie poster." style="width:100%">
+                </a>
+                <center><h4><b>Jujutsu Kaisen 0</b></h4></center>
+            </div>
+            <div class="column" title="Alice" style="float: left; width: 33.33%; padding: 5px;">
+                <a href="https://www.imdb.com/title/tt11040762/?ref_=nv_sr_srsg_11">
+                    <img src="{{url_for('static', filename='/images/Alice_(2022_film).jpg')}}" height="526" width="300" alt="Alice movie poster" style="width:100%">
+                </a>
+                <center><h4><b>Alice</b></h4></center>
+            </div>
+        </div> 
+    </div>
+</center>
+
+<!-- make a list of movies n images () -->
+{% endblock %}

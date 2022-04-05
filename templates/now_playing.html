@@ -1,8 +1,24 @@
 {% extends "base.html" %}
 {% block title %}Now Playing{% endblock %}
 {% block content %}
-<h1>Now Playing at Wacko's Theater</h1>
+<center><h1 style="color:black;">Now Playing at Wacko's Theater</h1></center>
 
-
-<!-- make a list of movies n images (maybe a table?) -->
+<center>
+    <div id="team_pics" style="color:black;">
+        <div class="row" style="content: ''; clear: both; display: table;">
+            <div class="column" title="The Batman." style="float: left; width: 33.33%; padding: 5px;">
+            <img src="{{url_for('static', filename='/images/TheBatman.jpg')}}" height="526" width="300" alt="The Batman movie poster." style="width:100%">
+            <center><h4><b>The Batman</b></h4></center>
+            </div>
+            <div class="column" title="Jujutsu Kaisen 0" style="float: left; width: 33.33%; padding: 5px;">
+                <img src="{{url_for('static', filename='/images/JJK0.jpg')}}" height="526" width="300" alt="Jujutsu Kaisen 0 movie poster." style="width:100%">
+                <center><h4><b>Jujutsu Kaisen 0</b></h4></center>
+            </div>
+            <div class="column" title="Alice" style="float: left; width: 33.33%; padding: 5px;">
+                <img src="{{url_for('static', filename='/images/Alice_(2022_film).jpg')}}" height="526" width="300" alt="Alice movie poster" style="width:100%">
+                <center><h4><b>Alice</b></h4></center>
+            </div>
+        </div> 
+    </div>
+</center>
 {% endblock %}

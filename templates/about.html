@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+
+{% block content %}
+
+<center>
+
+    <h1><b>Meet Our Team!</b></h1>
+<div style="display:inline-block;vertical-align:top;">
+    <h4><b>Persephone</b></h4>
+    <img src="{{url_for('static', filename='/images/perse.jpg')}}" height="526" width="400" style="border-radius: 50%;">
+</div>
+
+<div style="display:inline-block;">
+    <h5><b>Title:</b> Owner & Founder</h5>
+    <p><b>Bio:</b> Gardener and occasional goddess of spring. I run this movie theater so that one day I can retire and live with my plants in peace.</p>
+    <h5>Socials:</h5>
+    <p><a href="https://twitter.com/perses_theater">Twitter</a></p>
+</div>
+
+
+<div style="display:inline-block;vertical-align:top;">
+    <h4><b>Daphne</b></h4>
+    <img src="{{url_for('static', filename='/images/juli.jpg')}}" height="526" width="400" style="border-radius: 50%;">
+</div>
+
+<div style="display:inline-block;">
+    <h5><b>Title</b> Chief Marketing Officer</h5>
+    <p><b>Bio:</b> Chief Marketing Officer! I handle event planning, movie screenings, marketing, and more! For inquiries, please contact me at daphne@persesthearer.com</p>
+    <h5><b>Socials:</b></h5>
+    <p><a href="https://twitter.com/daphne_shmaphne">Twitter</a></p>
+</div>
+
+</center>
+
+{% endblock %}
