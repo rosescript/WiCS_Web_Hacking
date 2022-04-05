@@ -1,18 +1,37 @@
 {% extends "base.html" %}
-{% block title %}Log In{% endblock %}
+{% block title %}Login Page{% endblock %}
+
 {% block content %}
-<h1>Log In</h1>
-
-
-<form action="#" method="post">
-    <p>Username:</p>
-    <input type="text" name="un">
-
-    <p>Password:</p>
-    <input type="text" name="up">
-
-    <p></p>
-    <p><input type="submit" value="Submit"></p>
-</form>
+<center>
+	<div>
+		
+		<h1>Employee Sign-In</h1>
+	<!-- default credentials are admin:admin 
+	please visit www.freewebsitehoster.com for details on how to change credentials, do this ASAP. -->
+		<form action="#" method="post" id="theater_login"
+		style="display:block;
+			text-align:center;
+			background-color: #e70c3bc4;
+			border: none;
+			padding:10px;
+			width: 250px;">
+			<p>Username:</p>
+			<input type="text" id="username" name="un">
+		
+			<p>Password:</p>
+			<input type="password" id="userpass" name="up">
+			<p></p>
+			<p><input type="submit" value="Submit"></p>
+		</form>
+		
+	</div>
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for msg in messages %}
+				<p color="red"><b>{{msg}}</b></p>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+</center>
 
 {% endblock %}
