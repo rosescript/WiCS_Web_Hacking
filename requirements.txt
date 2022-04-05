@@ -1,2 +1,2 @@
 flask==2.0.2
-web: gunicorn -b :$PORT app:app
+web: gunicorn -b :$8000 app:app
